@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!---------------------------
+Name: Infinity Symbol
+File: Infinity Symbol
+-----------------------------
+Author: ArminBM & RaminBM
+Data:   11/16/2021, 3:52:17 AM
+---------------------------->
+    <title>Infinity Symbol</title>
+    <style>
+
+        body {
+  background-color: #000;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+#infinity1 {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 150px auto 0;
+  left: 78px;
+  top: 150px;
+  overflow: hidden;
+  border-radius: 0px 100px 100px 100px;
+  transform: rotate(-45deg);
+  box-shadow: #610078 20px 10px 40px 0px;
+
+}
+#infinity1::before {
+    transform: translate3d(25px,25px, 1px);
+  position: relative;
+  z-index: 10;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: #000;
+  content: "";
+  box-shadow:
+    inset 0px 0 23px #a307a3,   /* inner left magenta short */
+    inset 0px 0 23px #610078;  /* inner right cyan short */
+    
+    
+  border-radius: 0px 100px 100px 100px;
+}
+#infinity1::after {
+    background: linear-gradient(225deg, #0000c9 32% ,#610078 49%, #a307a3 55%, #bd001e 63%);
+  animation: rotateRectangle 5s infinite linear;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 300px;
+  height: 300px;
+  margin-left: -150px;
+  margin-top: -150px;
+  content: "";
+  border-radius: 0px 100px 100px 100px;
+}
+
+#infinity2 {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  top: 50%;
+  right: 100px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 0px 100px 100px 100px;
+  transform: rotate(135deg);
+  box-shadow: #610078 10px 20px 40px 0px;
+}
+#infinity2::before {
+  transform: translate3d(25px, 25px, 1px);
+  position: relative;
+  z-index: 10;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: #000;
+  content: "";
+  box-shadow:
+  inset 0px 0 23px #a307a3,   /* inner left magenta short */
+    inset 0px 0 23px #610078;  /* inner right cyan short */
+  border-radius: 0px 100px 100px 100px;
+}
+#infinity2::after {
+    background: linear-gradient(45deg, #0000c9 32% ,#610078 49%, #a307a3 55%, #bd001e 63%);
+  animation: rotateRectangle 5s infinite linear;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 300px;
+  height: 300px;
+  margin-left: -150px;
+  margin-top: -150px;
+  content: "";
+  border-radius: 0px 100px 100px 100px;
+}
+
+    </style>
+</head>
+
+<body>
+    
+    <div id="container">
+        <div id="infinity1" class="neonText1"></div>
+        <div id="infinity2" class="neonText2"></div>
+    </div>
+
+</body>
+
+</html>
